@@ -9,9 +9,7 @@ import java.util.Scanner;
 public class Main {
     void solve(Scanner in, PrintWriter out) {
         int a = in.nextInt();
-        int b = in.nextInt();
-        int s = a + b;
-        out.println('a');
+        out.println(a);
     }
 
     void run() {
