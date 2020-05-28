@@ -1,13 +1,20 @@
-package template;
+package lesson_3.task_21;
 
-import java.io.*;
-import java.util.*;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class Main {
     void solve(Scanner in, PrintWriter out) {
-        int n = in.nextInt();
+        int w1 = in.nextInt();
+        int w2 = in.nextInt();
+        int w3 = in.nextInt();
+        int maxw = Math.max(Math.max(w1, w2), w3);
+        int minw = Math.min(Math.min(w1, w2), w3);
 
-        out.println();
+        out.println(maxw - minw);
     }
 
     void run() {

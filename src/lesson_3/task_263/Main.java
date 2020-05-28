@@ -1,4 +1,4 @@
-package template;
+package lesson_3.task_263;
 
 import java.io.*;
 import java.util.*;
@@ -6,8 +6,12 @@ import java.util.*;
 public class Main {
     void solve(Scanner in, PrintWriter out) {
         int n = in.nextInt();
+        int i = in.nextInt();
+        int j = in.nextInt();
+        int n1 = Math.min(i, j);
+        int n2 = Math.max(i, j);
 
-        out.println();
+        out.println(Math.min(n2 - n1 - 1, n1 + n - n2 - 1));
     }
 
     void run() {

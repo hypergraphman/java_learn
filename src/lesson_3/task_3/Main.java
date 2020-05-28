@@ -1,13 +1,16 @@
-package template;
+package lesson_3.task_3;
 
-import java.io.*;
-import java.util.*;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class Main {
     void solve(Scanner in, PrintWriter out) {
-        int n = in.nextInt();
+        long n = in.nextLong();
 
-        out.println();
+        out.println(n * n);
     }
 
     void run() {

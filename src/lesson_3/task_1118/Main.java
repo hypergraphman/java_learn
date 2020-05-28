@@ -1,13 +1,22 @@
-package template;
+package lesson_3.task_1118;
 
-import java.io.*;
-import java.util.*;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+import static java.lang.Math.max;
+import static java.lang.Math.min;
 
 public class Main {
     void solve(Scanner in, PrintWriter out) {
-        int n = in.nextInt();
+        int h = in.nextInt();
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int d = a - b;
 
-        out.println();
+        out.println(max(1, ((h - a) + d - 1) / d + 1));
     }
 
     void run() {
